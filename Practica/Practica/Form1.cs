@@ -15,29 +15,13 @@ namespace Practica
         public Form1()
         {
             InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var club1 = new Equipo();
-            club1.Nombre = "Allan";
-            club1.Club = "Motagua";
-            club1.Posicion = "Defensa";
 
-            var club2 = new Equipo();
-            club2.Nombre = "Cristian";
-            club2.Club = "Olimpia";
-            club2.Posicion = "Portero";
+            var equipoBL = new EquipoBL();
+            listadeJugadoresBindingSource.DataSource = equipoBL.ListadeJugadores;
 
-            var listadeJugadores = new List<Equipo>();
-            listadeJugadores.Add(club1);
-            listadeJugadores.Add(club2);
-
-            foreach (var A in listadeJugadores)
-            {
-                MessageBox.Show(A.Nombre +"  " + A.Posicion + "  " + A.Club);
-            }
-
+            var posicionBL = new PosicionBL();
+            listadePosicionesBindingSource.DataSource = posicionBL.ListadePosiciones; 
         }
     }
 }
