@@ -17,11 +17,12 @@ namespace Practica
             InitializeComponent();
 
 
-            var equipoBL = new EquipoBL();
-            listadeJugadoresBindingSource.DataSource = equipoBL.ListadeJugadores;
+        }
 
-            var posicionBL = new PosicionBL();
-            listadePosicionesBindingSource.DataSource = posicionBL.ListadePosiciones; 
+        internal void cargarDatos(EquipoBL equipoBL, PosicionBL posicionBL)
+        {
+            listadeJugadoresBindingSource.DataSource = equipoBL.ListadeJugadores;
+            listadePosicionesBindingSource.DataSource = posicionBL.ListadePosiciones;
         }
     }
 }

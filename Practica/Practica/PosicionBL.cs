@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,11 +9,11 @@ namespace Practica
 {
     class PosicionBL
     {
-        public List<Posicion> ListadePosiciones { get; set; }
+        public BindingList<Posicion> ListadePosiciones { get; set; }
 
         public PosicionBL()
         {
-            ListadePosiciones = new List<Posicion>();
+            ListadePosiciones = new BindingList<Posicion>();
             CargarDatos();
 
 

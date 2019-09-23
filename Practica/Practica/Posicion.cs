@@ -11,6 +11,11 @@ namespace Practica
         public int Id { get; set; }
         public string Descripcion { get; set; }
 
+        public Posicion()
+        {
+
+        }
+
         public Posicion(int id, string descripcion)
         {
             Id = id;

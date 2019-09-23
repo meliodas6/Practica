@@ -123,6 +123,7 @@
             // 
             // listadeJugadoresBindingSource
             // 
+            this.listadeJugadoresBindingSource.AllowNew = true;
             this.listadeJugadoresBindingSource.DataSource = typeof(Practica.Equipo);
             // 
             // bindingNavigatorCountItem
@@ -204,7 +205,6 @@
             // listadeJugadoresBindingNavigatorSaveItem
             // 
             this.listadeJugadoresBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.listadeJugadoresBindingNavigatorSaveItem.Enabled = false;
             this.listadeJugadoresBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("listadeJugadoresBindingNavigatorSaveItem.Image")));
             this.listadeJugadoresBindingNavigatorSaveItem.Name = "listadeJugadoresBindingNavigatorSaveItem";
             this.listadeJugadoresBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);

@@ -13,6 +13,12 @@ namespace Practica
         public Posicion Puesto { get; set; }
         public int PuestoId { get; set; }
 
+        public Equipo()
+        {
+            Puesto = new Posicion(1, "");
+            PuestoId = Puesto.Id;
+        }
+
         public Equipo(int id, string nombre, Posicion puesto)
         {
             Id = id;

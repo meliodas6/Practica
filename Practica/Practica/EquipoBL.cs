@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,16 +9,16 @@ namespace Practica
 {
     public class EquipoBL
     {
-        public List<Equipo> ListadeJugadores { get; set; }
+        public BindingList<Equipo> ListadeJugadores { get; set; }
 
         public EquipoBL()
         {
-            ListadeJugadores = new List<Equipo>();
+            ListadeJugadores = new BindingList<Equipo>();
             CargarDatos();
         }
 
         private void CargarDatos()
-        {
+        { 
 
             var posicion1 = new Posicion(1, "Defensa");
             var posicion2 = new Posicion(2, "Portero");
